@@ -13,7 +13,7 @@ import Cabin5 from "../../Assets/cabin/cabin5.jpg";
 import Cabin6 from "../../Assets/cabin/cabin6.jpg";
 import Cabin7 from "../../Assets/cabin/cabin7.jpg";
 import Cabin8 from "../../Assets/cabin/cabin8.jpg";
-import Cabin9 from "../../Assets/cabin/";
+//import Cabin9 from "../../Assets/cabin/";
 
 //import * as otherGallery  from 'react-photo-gallery' ;
 import "./Cabin.css";
