@@ -27,13 +27,13 @@ app.use(routes);
 //! insert your own options here
 var options = {
   key: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.key"
+    "/opt/bitnami/letsencrypt/certificates/www.theluckystarr.com.key"
   ),
   cert: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.crt"
+    "/opt/bitnami/letsencrypt/certificates/www.theluckystarr.com.crt"
   ),
   ca: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.issuer.crt"
+    "/opt/bitnami/letsencrypt/certificates/www.theluckystarr.com.issuer.crt"
   )
 };
 
