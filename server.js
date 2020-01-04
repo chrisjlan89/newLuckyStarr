@@ -15,8 +15,6 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use(ipfilter(ips, { mode: "allow" }));
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -24,17 +22,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 dotenv.config({ debug: process.env.DEBUG });
+app.use(routes);
 
 //! insert your own options here
 var options = {
   key: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/lobby.momentumsolar.app.key"
+    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.key"
   ),
   cert: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/lobby.momentumsolar.app.crt"
+    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.crt"
   ),
   ca: fs.readFileSync(
-    "/opt/bitnami/letsencrypt/certificates/lobby.momentumsolar.app.issuer.crt"
+    "/opt/bitnami/letsencrypt/certificates/theluckystarr.com.issuer.crt"
   )
 };
 
